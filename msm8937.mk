@@ -428,6 +428,7 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     hostapd \
     dhcpcd.conf \
+    TetheringConfigOverlay \
     wificond \
     WifiOverlay \
     wpa_supplicant \
