@@ -1,0 +1,2 @@
+allow hal_wifi_supplicant_default wifi_vendor_data_file:sock_file { create };
+allow hal_wifi_supplicant_default wifi_vendor_data_file:sock_file { setattr };

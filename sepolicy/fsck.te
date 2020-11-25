@@ -1,0 +1,2 @@
+allow fsck sysfs_batteryinfo:dir { search };
+allow fsck fsck:capability { kill };
