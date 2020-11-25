@@ -18,7 +18,6 @@
 # HALs
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.0-service\.widevine         u:object_r:hal_drm_widevine_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.1-service\.clearkey         u:object_r:hal_drm_clearkey_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.xiaomi_8937      u:object_r:hal_lineage_touch_default_exec:s0
 
 # Input devices
 /(vendor|system/vendor)/usr/idc(/.*)?                         u:object_r:vendor_idc_file:s0
@@ -38,4 +37,7 @@
 /(vendor|system/vendor)/bin/init\.baseband\.sh          u:object_r:init_baseband_exec:s0
 
 # Time
-/system/bin/move_time_data\.sh            u:object_r:move-time-data-sh_exec:s0
+#/system/bin/move_time_data\.sh            u:object_r:move-time-data-sh_exec:s0
+
+# Root Files
+/persist(/.*)?        u:object_r:mnt_vendor_file:s0

@@ -192,7 +192,7 @@ BOARD_USES_QCOM_HARDWARE := true
 
 # RIL
 DISABLE_RILD_OEM_HOOK := true
-TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
+#TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 # Recovery
 ifeq ($(AB_OTA_UPDATER), true)
@@ -203,7 +203,7 @@ endif
 TARGET_RECOVERY_UI_BLANK_UNBLANK_ON_INIT := true
 
 # SELinux
-include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+include device/qcom/sepolicy/SEPolicy.mk
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 
 # Wi-Fi
